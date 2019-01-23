@@ -4,20 +4,17 @@ var fs = require('fs');
 http.createServer((req, res) => {
   var name = require('url').parse(req.url, true).query.name;
 
-  if (name == undefined) { name = 'World'; }
+  if (name == undefined) { name = 'XXX'; }
 
-  if (name == 'burningbird')
-  {
+  if (name == 'burningbird') {
     var file = 'phoenix5a.png';
     fs.stat(file, (err, stat) => {
-      if (err)
-      {
+      if (err) {
         console.log(err);
         res.writeHead(200, { 'Content-Type': 'text/plain' });
         res.end("Sorry, Burningbird isn't around right now \n");
       }
-      else
-      {
+      else {
         var img = fs.readFileSync(file);
         res.contentType = 'image/png';
         res.contentLength = stat.size;
@@ -25,8 +22,7 @@ http.createServer((req, res) => {
       }
     });
   }
-  else
-  {
+  else {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('Hello ' + name + '\n');
   }
