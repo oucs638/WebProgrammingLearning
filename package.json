@@ -1,0 +1,22 @@
+{
+  "name": "webprogramminglearning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oucs638/WebProgrammingLearning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oucs638/WebProgrammingLearning/issues"
+  },
+  "homepage": "https://github.com/oucs638/WebProgrammingLearning#readme",
+  "dependencies": {
+    "requirejs": "^2.3.6"
+  }
+}
